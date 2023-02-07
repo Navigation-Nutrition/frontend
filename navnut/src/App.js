@@ -3,11 +3,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Button from 'react-bootstrap/Button';
 import { Button } from 'react-bootstrap'; 
 import IMG_1161 from './IMGS/IMG_1161.JPG'
+import { FaArrowAltCircleRight } from 'react-icons/fa';
+
 
 function App() {
   return (
     <div classNameName="App">
-        {/* <div className="main">  	
+        <div className="main">  	
         <input type="checkbox" id="chk" aria-hidden="true" />
         <div className="signup">
           <form>
@@ -27,13 +29,13 @@ function App() {
             <input type="password" name="pswd" placeholder="Password" required />
             <button>Login</button>
           </form>
-        </div> */}
-<div className="header">
-  <div className="title">NAVIGATION NUTRITION</div>
+        </div>
+{/* <div className="header">
+  <div className="title"> NAVIGATION NUTRITION</div>
   
   <div className="nav">
-    <div className="item" >My Nutrition</div>
-    <div className="item">My Community</div>
+    <div className="item" > Nutrition</div>
+    <div className="item"> Community</div>
   </div>
 </div>
  
@@ -41,17 +43,17 @@ function App() {
   <div className="text">
     <h1>Become Nutrious</h1>
     <h2>The Fun Way and Easy Way</h2>
-    <Button variant="danger">Get Started</Button>{' '}
+    <Button className = "bootstapBut" variant="danger">Get Started</Button>{' '}
     <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
    </div>
    <img className="img" src={IMG_1161} alt="React Image" />
 </div>
 
 <div className = 'd-flex flex-column mb-3'>
-    <div className='box1'>PLAY NUTRITION GAME</div>
-    <div className='box2'>NUTRTION NEWS </div>
-    <div className='box3'>NUTRTION RECIPES</div>
-   </div>
+    <div className='box1'><FaArrowAltCircleRight /> PLAY NUTRITION GAME</div>
+    <div className='box2'><FaArrowAltCircleRight /> NUTRTION NEWS </div>
+    <div className='box3'><FaArrowAltCircleRight /> NUTRTION RECIPES</div>
+   </div> */}
 
 
 {/* <div className="action">
@@ -63,13 +65,13 @@ Sed dolor nist, blandit nec lacus dignissim, sollicitudin elementum erat. Nulla 
 </div> */}
 
 
-<div className="footer">
+{/* <div className="footer">
 &copy; NAVIGATION NUTRITION all rights reserved
-</div>
+</div> */}
 
 
     </div>
-    // </div>
+    </div>
   );
 }
 
