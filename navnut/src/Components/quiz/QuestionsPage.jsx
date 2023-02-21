@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import Question from "./Question";
+import Question from "./Question.jsx";
 
-import { questions } from "../../../../../../quiz_app/src/questions";
+import { questions } from "../../questions";
 
 const QuestionsPage = ({
   setShowPages,
@@ -27,5 +27,8 @@ const QuestionsPage = ({
     </>
   );
 };
+
+
+
 
 export default QuestionsPage;

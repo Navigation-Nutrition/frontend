@@ -1,9 +1,11 @@
-import FinalPage from "./Components/FinalPage";
-import QuestionsPage from "./Components/QuestionsPage";
-import StartingPage from "./Components/StartingPage"
+import { useState } from "react";
+import FinalPage from "./quiz/FinalPage.jsx"
+import QuestionsPage from "./quiz/QuestionsPage.jsx";
+import StartingPage from "./quiz/StartingPage.jsx"
+import "../CSS/QuizPage.css"
 
 
-function Quiz() {
+function QuizPage() {
   const [username, setUsername] = useState("");
 
   const [score, setScore] = useState(0);
@@ -14,7 +16,7 @@ function Quiz() {
   const [showFinalPage, setShowFinalPage] = useState(false);
 
   return (
-    <>
+    <div className="quizgame">
       {showStartingPage && (
         <StartingPage
           setShowStartingPage={setShowStartingPage}
@@ -44,8 +46,8 @@ function Quiz() {
           setUsername={setUsername}
         />
       )}
-    </>
+    </div>
   );
 }
 
-export default Quiz;
+export default  QuizPage;

@@ -12,7 +12,7 @@
 
 .answer {
   padding: 10px;
-  background-color: black;
+  background-color: #000137;
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -27,7 +27,7 @@
 }
 
 .answer:hover {
-  background-color: #8ec5fc;
+  background-color: red;
 }
 
 .score {

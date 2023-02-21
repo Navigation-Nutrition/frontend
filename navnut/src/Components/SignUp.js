@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 
 
 function SignUp() {
+    let navigate = useNavigate();
     const [UserName, setUserName] = useState("")
     const [Email, setEmail] = useState("")
     const [Password, setPassword] = useState("")
@@ -39,9 +40,8 @@ function SignUp() {
 
     //console.log("submitting sign up form")
     function Submit(e){
-      let navigate = useNavigate();
-      console.log("submitting sign up form")
       e.preventDefault()
+      console.log("submitting sign up form")
       console.log('right here', UserName, Email, Password, FirstName, LastName)
 
       let myHeaders = new Headers();
@@ -65,7 +65,7 @@ function SignUp() {
         .then(res => res.json())
         .then(data => {
           console.log(data)
-          navigate("/hello");
+          navigate("/todo");
         })
     }
 
@@ -100,38 +100,28 @@ function SignUp() {
 
 
 
-
-
-
-
-
-
-
-
-
-
     
     return (
-      <div className="App">
+      <div className="SignUpForm">
           <div className="main">  	
-          <input type="checkbox" id="chk" aria-hidden="true" />
+          <input className="checkbox" type="checkbox" id="chk" aria-hidden="true" />
           <div className="signup">
             <form onSubmit={Submit} >
-              <label htmlFor="chk" aria-hidden="true">Sign up</label>
+              <label className="chk" htmlFor="chk" aria-hidden="true">Sign up</label>
               <input type="text" name="txt" placeholder="First Name"  onChange={handleUserName}  required />
               <input type="email" name="email" placeholder="Last Name" onChange={handleEmail} required />
               <input type="password" name="pswd" placeholder="User Name" onChange={handlesetPassword} required />
               <input type="firstname" name="firn" placeholder="Password" onChange={handlesetFirstName} required />
               <input type="lastname" name="lasn" placeholder="Email" onChange={handlesetLastName} required />
-              <button>Sign up</button>
+              <button className="signUpBut"> Sign up </button>
             </form>
           </div>
           <div className="login">
-            <form>
-              <label htmlFor="chk" aria-hidden="true">Login</label>
-              <input type="email" name="UserName" placeholder="UserName" /*  onChange={handleUserName} */ required />
-              <input type="password" name="pswd" placeholder="Password-Log"  /* onChange={handlesetPassword}  */required />
-              <button>Login</button>
+            <form onSubmit={SubmitLog}>
+              <label className="chk" htmlFor="chk" aria-hidden="true">Login</label>
+              <input type="email" name="UserName" placeholder="UserName" /* onChange={handleUserName} */ required />
+              <input type="password" name="pswd" placeholder="Password-Log"  /*  onChange={handlesetPassword}  */  required />
+              <button className="signUpBut">Login</button>
             </form>
           </div>
       </div>

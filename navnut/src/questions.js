@@ -1,212 +1,212 @@
 export const questions = [
   {
-    questionText: "How long is an Olympic swimming pool (in meters) celine",
+    questionText: "What percentage of Americans eat enough vegetables?",
     answers: [
       {
-        answerText: "1000",
+        answerText: "About 9%",
         correctAnswer: true,
       },
       {
-        answerText: "60",
+        answerText: "About 33%",
         correctAnswer: false,
       },
       {
-        answerText: "75",
+        answerText: "About 60%",
         correctAnswer: false,
       },
       {
-        answerText: "100",
+        answerText: "About 100%",
         correctAnswer: false,
       },
     ],
   },
   {
     questionText:
-      "Which country do cities of Perth, Adelade & Brisbane belong to?",
+      "If you eat seafood, how often should you have it?",
     answers: [
       {
-        answerText: "France",
+        answerText: "3 Times a week",
         correctAnswer: false,
       },
       {
-        answerText: "Portugal",
+        answerText: "Once a Week",
         correctAnswer: false,
       },
       {
-        answerText: "Germany",
+        answerText: "Once a Year",
         correctAnswer: false,
       },
       {
-        answerText: "Australia",
+        answerText: "Twice a weeek",
         correctAnswer: true,
       },
     ],
   },
   {
-    questionText: "What geometric shape is generally used for stop signs?",
+    questionText: "Which of these seafoods should you NOT eat more of?",
     answers: [
       {
-        answerText: "Square",
+        answerText: "Salmon",
         correctAnswer: false,
       },
       {
-        answerText: "Octagon",
+        answerText: "King Mackerel",
         correctAnswer: true,
       },
       {
-        answerText: "Rectangle",
+        answerText: "Tilapia",
         correctAnswer: false,
       },
       {
-        answerText: "Triangle",
+        answerText: "Shrimp",
         correctAnswer: false,
       },
     ],
   },
   {
-    questionText: "What is cynophobia?",
+    questionText: "Which of the following is a whole grain?",
     answers: [
       {
-        answerText: "Fear of spiders",
+        answerText: "Multi-grain Bread",
         correctAnswer: false,
       },
       {
-        answerText: "Fear of darkness",
+        answerText: "Couscous",
         correctAnswer: false,
       },
       {
-        answerText: "Fear of dogs",
+        answerText: "Popcorn",
         correctAnswer: true,
       },
       {
-        answerText: "Fear of heights",
+        answerText: "Corn Tortila",
         correctAnswer: false,
       },
     ],
   },
   {
-    questionText: "How many languages are written from right to left?",
+    questionText: "How much of your grains should be whole grains?",
     answers: [
       {
-        answerText: "12",
+        answerText: "at least 50%",
         correctAnswer: true,
       },
       {
-        answerText: "10",
+        answerText: "at least 10%",
         correctAnswer: false,
       },
       {
-        answerText: "15",
+        answerText: "at least 15%",
         correctAnswer: false,
       },
       {
-        answerText: "1",
+        answerText: "at least 80%",
         correctAnswer: false,
       },
     ],
   },
   {
-    questionText: "Which animal can be seen on the Porsche logo?",
+    questionText: "What type of food is the biggest single source of sodium in the American diet?",
     answers: [
       {
-        answerText: "Fox",
+        answerText: "Pizza",
         correctAnswer: false,
       },
       {
-        answerText: "Wolf",
+        answerText: "Chicken Dishes",
         correctAnswer: false,
       },
       {
-        answerText: "Horse",
+        answerText: "Burgers and Sandwiches",
         correctAnswer: true,
       },
       {
-        answerText: "Bull",
+        answerText: "Pasta and Pasta Dishes",
         correctAnswer: false,
       },
     ],
   },
   {
-    questionText: "What is the name of the largest ocean on earth?",
+    questionText: "Where do Americans get the most added sugar in their diet??",
     answers: [
       {
-        answerText: "Pacific Ocean",
+        answerText: "Candy",
         correctAnswer: true,
       },
       {
-        answerText: "Atlantic Ocean",
+        answerText: "Soda, Energy and sports Drinks",
         correctAnswer: false,
       },
       {
-        answerText: "Indian Ocean",
+        answerText: "Dairy Desserts",
         correctAnswer: false,
       },
       {
-        answerText: "Artic Ocean",
+        answerText: "Grain based deserts",
         correctAnswer: false,
       },
     ],
   },
   {
     questionText:
-      "Demolition of the Berlin wall separating East and West Germany began in what year?",
+      "Which of the following is not an added sugar??",
     answers: [
       {
-        answerText: "1980",
+        answerText: "Maple Syrup",
         correctAnswer: false,
       },
       {
-        answerText: "1989",
+        answerText: "Frutose",
         correctAnswer: true,
       },
       {
-        answerText: "1992",
+        answerText: "Honey",
         correctAnswer: false,
       },
       {
-        answerText: "1990",
+        answerText: "Brown Sugar",
         correctAnswer: false,
       },
     ],
   },
   {
-    questionText: "What is the rarest M&M color?",
+    questionText: "Which of these is a solid fat?",
     answers: [
       {
-        answerText: "Brown",
+        answerText: "All of the above",
         correctAnswer: true,
       },
       {
-        answerText: "Green",
+        answerText: "Butter",
         correctAnswer: false,
       },
       {
-        answerText: "Red",
+        answerText: "Chicken",
         correctAnswer: false,
       },
       {
-        answerText: "Blue",
+        answerText: "Hydrogenated Oils",
         correctAnswer: false,
       },
     ],
   },
   {
-    questionText: "Which country invented ice cream?",
+    questionText: "Which of these oils and fats is healthiest for cooking?",
     answers: [
       {
-        answerText: "India",
+        answerText: "Butter",
         correctAnswer: false,
       },
       {
-        answerText: "China",
+        answerText: "Canola Oil",
         correctAnswer: true,
       },
       {
-        answerText: "England",
+        answerText: "Margarine",
         correctAnswer: false,
       },
       {
-        answerText: "Brazil",
+        answerText: "Lard",
         correctAnswer: false,
       },
     ],

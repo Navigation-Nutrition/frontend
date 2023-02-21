@@ -1,16 +1,13 @@
-import context from "./context";
+import context from "./Context";
 import { useState } from "react";
 
-function ContactsProvider({ children }) {
-    const [Pokemon, setPokemon] = useState([]);
-    const [input, setInput] = useState("")
+function ContextProvider({ children }) {
+    const [TaskCounter, setTaskCounter] = useState(0);
 
 
     const data = {
-        Pokemon,
-        setPokemon,
-        input,
-        setInput
+        TaskCounter, 
+        setTaskCounter
     }
     return (
         <context.Provider value={data}>
@@ -19,4 +16,4 @@ function ContactsProvider({ children }) {
     )
 
 }
-export default ContactsProvider
+export default ContextProvider
