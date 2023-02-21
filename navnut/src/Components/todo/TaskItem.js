@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react';
 import context from "../context/Context"
+import useLocalStorage from '../useLocalStorage';
 
 // styles
 import styles from './TaskItem.module.css';
@@ -13,16 +14,18 @@ import { TrashIcon } from '@heroicons/react/24/outline';
 
 const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
   const [isChecked, setIsChecked ] = useState(task.checked);
-  const {TaskCounter, setTaskCounter} = useContext(context)
+  const {TaskCounter, setTaskCounter} = useContext(context) 
+  const [tasks, setTasks] = useLocalStorage('react-todo.tasks', [])
 
   const handleCheckboxChange = (e) =>{
     setIsChecked(!isChecked);
     toggleTask(task.id);
 
-    //console.log(TaskCounter)
-    // if(isChecked){
-    //   counter++
-    // }
+    if(!isChecked){
+      // console.log(TaskCounter +1)
+      // console.log(isChecked)
+      setTaskCounter(TaskCounter +1)
+    }
     // console.log(counter)
   }
 

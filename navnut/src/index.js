@@ -9,11 +9,11 @@ import ContextProvider from './Components/context/ContextProvider';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
       <ContextProvider>
-      <BrowserRouter>
       <App />
-    </BrowserRouter>
     </ContextProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
