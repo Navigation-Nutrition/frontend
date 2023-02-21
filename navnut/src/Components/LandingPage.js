@@ -3,16 +3,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap'; 
 import IMG_1161 from '../IMGS/IMG_1161.JPG'
 import { FaArrowAltCircleRight } from 'react-icons/fa';
+import '../CSS/landingPage.css'
 
 function LandingPage() {
     return (
-      <div classNameName="Landing">
+      <div className="Landing">
   
    <div className="header">
     <div className="title"> NAVIGATION NUTRITION</div>
     
     <div className="nav">
-      <div className="item" > Nutrition</div>
+      <div className="item"> Nutrition</div>
       <div className="item"> Community</div>
     </div>
   </div>
@@ -21,7 +22,7 @@ function LandingPage() {
     <div className="text">
       <h1>Become Nutrious</h1>
       <h2>The Fun Way and Easy Way</h2>
-      <Button className = "bootstapBut" variant="danger">Get Started</Button>{' '}
+      <Button  href="http://localhost:3000/signup" className = "bootstapBut" variant="danger"> Get Started</Button>{}
       <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
      </div>
      <img className="img" src={IMG_1161} alt="React Image" />
@@ -48,7 +49,6 @@ function LandingPage() {
   </div>
   
       </div>
-      // </div>
     );
   }
   export default LandingPage
