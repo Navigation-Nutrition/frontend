@@ -14,17 +14,19 @@ import { TrashIcon } from '@heroicons/react/24/outline';
 
 const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
   const [isChecked, setIsChecked ] = useState(task.checked);
-  const {TaskCounter, setTaskCounter} = useContext(context) 
-  const [tasks, setTasks] = useLocalStorage('react-todo.tasks', [])
-
-  const handleCheckboxChange = (e) =>{
+  const {TaskCounter, setTaskCounter} = useContext(context)
+  
+  const handleCheckboxChange = (e) => {
     setIsChecked(!isChecked);
     toggleTask(task.id);
 
     if(!isChecked){
-      // console.log(TaskCounter +1)
+     console.log(TaskCounter +1)
       // console.log(isChecked)
       setTaskCounter(TaskCounter +1)
+      window.localStorage.setItem('react-task-counter', JSON.stringify(TaskCounter +1))
+      let number = window.localStorage.getItem('react-task-counter')
+      console.log(number)
     }
     // console.log(counter)
   }
