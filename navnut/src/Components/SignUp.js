@@ -1,15 +1,16 @@
 import "../CSS/SignUP.css"
-import { useState} from "react"
+import { useState, useContext} from "react"
 import { useNavigate } from "react-router-dom"
+import context from './context/Context'
 
 
 function SignUp() {
     let navigate = useNavigate();
-    const [UserName, setUserName] = useState("")
-    const [Email, setEmail] = useState("")
-    const [Password, setPassword] = useState("")
-    const [FirstName, setFirstName] = useState("")
-    const [LastName, setLastName] = useState("")
+    const {UserName, setUserName} = useContext(context)
+    const {Email, setEmail} = useContext(context)
+    const {Password, setPassword} = useContext(context)
+    const {FirstName, setFirstName} = useContext(context)
+    const {LastName, setLastName} = useContext(context)
 
 
     function handleUserName(e) {
@@ -71,28 +72,30 @@ function SignUp() {
 
     function SubmitLog(e){
       e.preventDefault()
-
-      let navigate = useNavigate();
+      console.log(UserName)
+      console.log(Password)
 
       let myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
-
+   
+      
       const requestOptions= {
         method: "POST",
         headers: myHeaders,
-  
-        
         body: JSON.stringify({ 
           "user_name": UserName,
           "password": Password,
         }) ,redirect: 'follow'
       }
+    
        
       fetch("http://localhost:8000/users/login", requestOptions)
         .then(res => res.json())
         .then(data => {
           console.log(data)
-          navigate("/hello");
+          if(data[0].user_name && data[0].password){
+            navigate("/todo");
+          }
         })
     }
 
@@ -109,18 +112,18 @@ function SignUp() {
             <form onSubmit={Submit} >
               <label className="chk" htmlFor="chk" aria-hidden="true">Sign up</label>
               <input type="text" name="txt" placeholder="First Name"  onChange={handleUserName}  required />
-              <input type="email" name="email" placeholder="Last Name" onChange={handleEmail} required />
+              <input type="lastname" name="email" placeholder="Last Name" onChange={handleEmail} required />
               <input type="password" name="pswd" placeholder="User Name" onChange={handlesetPassword} required />
               <input type="firstname" name="firn" placeholder="Password" onChange={handlesetFirstName} required />
-              <input type="lastname" name="lasn" placeholder="Email" onChange={handlesetLastName} required />
+              <input type="email" name="lasn" placeholder="Email" onChange={handlesetLastName} required />
               <button className="signUpBut"> Sign up </button>
             </form>
           </div>
           <div className="login">
             <form onSubmit={SubmitLog}>
               <label className="chk" htmlFor="chk" aria-hidden="true">Login</label>
-              <input type="email" name="UserName" placeholder="UserName" /* onChange={handleUserName} */ required />
-              <input type="password" name="pswd" placeholder="Password-Log"  /*  onChange={handlesetPassword}  */  required />
+              <input type="UserName" name="UserName" placeholder="UserName" onChange={handleUserName} required />
+              <input type="password" name="pswd" placeholder="Password-Log" onChange={handlesetPassword} required />
               <button className="signUpBut">Login</button>
             </form>
           </div>

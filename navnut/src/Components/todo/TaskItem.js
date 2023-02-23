@@ -16,6 +16,8 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
   const [isChecked, setIsChecked ] = useState(task.checked);
   const {TaskCounter, setTaskCounter} = useContext(context)
   
+  let counter = 0
+
   const handleCheckboxChange = (e) => {
     setIsChecked(!isChecked);
     toggleTask(task.id);
@@ -23,6 +25,7 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
     if(!isChecked){
      console.log(TaskCounter +1)
       // console.log(isChecked)
+      console.log(counter++)
       setTaskCounter(TaskCounter +1)
       window.localStorage.setItem('react-task-counter', JSON.stringify(TaskCounter +1))
       let number = window.localStorage.getItem('react-task-counter')

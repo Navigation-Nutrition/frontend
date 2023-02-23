@@ -21,9 +21,9 @@ function App() {
        <Routes>
        <Route path='/' element={<LandingPage />}/> 
       <Route path='signup' element={<SignUp /> }/> 
-      <Route path='' element = { <FinalPage />  }/>
+      {/* <Route path='' element = { <FinalPage />  }/> */}
        <Route path='' element ={< Question /> }/> 
-       <Route path='' element ={<Card /> }/> 
+       {/* <Route path='' element ={<Card /> }/>  */}
          <Route path='todo' element ={<ToDo /> }/> 
       <Route path='quiz' element ={<Quiz /> }/> 
        
