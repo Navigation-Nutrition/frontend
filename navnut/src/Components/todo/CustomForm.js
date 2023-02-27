@@ -25,7 +25,7 @@ const CustomForm = ({ addTask }) => {
         <input
           type="text"
           id="task"
-          className="input"
+          className="todoinput"
           value={task}
           onInput={(e) => setTask(e.target.value)}
           required

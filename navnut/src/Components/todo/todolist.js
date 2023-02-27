@@ -4,7 +4,7 @@ import { useState } from 'react'
 import CustomForm from './CustomForm'
 import EditForm from './EditForm'
 import TaskList from './TaskList'
-import "../../index"
+import "./todo.css"
 
 import useLocalStorage from '../useLocalStorage'
 

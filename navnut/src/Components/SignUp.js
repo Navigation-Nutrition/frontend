@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import context from './context/Context'
 
 
+
 function SignUp() {
     let navigate = useNavigate();
     const {UserName, setUserName} = useContext(context)
@@ -93,37 +94,34 @@ function SignUp() {
         .then(res => res.json())
         .then(data => {
           console.log(data)
-          if(data[0].user_name && data[0].password){
+          if(data.foundUser[0].user_name && data.foundUser[0].password){
+            localStorage.setItem("token", data.token)
             navigate("/todo");
           }
         })
     }
 
-
-
-
-
     
     return (
       <div className="SignUpForm">
-          <div className="main">  	
+          <div className="SignUpmain">  	
           <input className="checkbox" type="checkbox" id="chk" aria-hidden="true" />
           <div className="signup">
             <form onSubmit={Submit} >
               <label className="chk" htmlFor="chk" aria-hidden="true">Sign up</label>
-              <input type="text" name="txt" placeholder="First Name"  onChange={handleUserName}  required />
-              <input type="lastname" name="email" placeholder="Last Name" onChange={handleEmail} required />
-              <input type="password" name="pswd" placeholder="User Name" onChange={handlesetPassword} required />
-              <input type="firstname" name="firn" placeholder="Password" onChange={handlesetFirstName} required />
-              <input type="email" name="lasn" placeholder="Email" onChange={handlesetLastName} required />
+              <input className="SignInput" type="text" name="txt" placeholder="First Name"  onChange={handleUserName}  required />
+              <input className="SignInput" type="lastname" name="email" placeholder="Last Name" onChange={handleEmail} required />
+              <input className="SignInput" type="username" name="username" placeholder="User Name" onChange={handlesetPassword} required />
+              <input className="SignInput" type="password" name="pswd" placeholder="Password" onChange={handlesetFirstName} required />
+              <input className="SignInput" type="email" name="lasn" placeholder="Email" onChange={handlesetLastName} required />
               <button className="signUpBut"> Sign up </button>
             </form>
           </div>
           <div className="login">
             <form onSubmit={SubmitLog}>
               <label className="chk" htmlFor="chk" aria-hidden="true">Login</label>
-              <input type="UserName" name="UserName" placeholder="UserName" onChange={handleUserName} required />
-              <input type="password" name="pswd" placeholder="Password-Log" onChange={handlesetPassword} required />
+              <input className="SignInput" type="UserName" name="UserName" placeholder="UserName" onChange={handleUserName} required />
+              <input className="SignInput" type="password" name="pswd" placeholder="Password-Log" onChange={handlesetPassword} required />
               <button className="signUpBut">Login</button>
             </form>
           </div>
