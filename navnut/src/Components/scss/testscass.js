@@ -1,37 +1,81 @@
+
 import './testSass.scss'
 
-function Testsass() {
-
-  return (
-    <div>
-      <div className="screen"></div>
-      <ul className="dance-animation">
-        <li className="dance-frame dance-animation--dancer1"></li>
-        <li className="dance-frame dance-animation--dancer2"></li>
-        <li className="dance-frame dance-animation--dancer3"></li>
-        <li className="dance-frame dance-animation--dancer4"></li>
-        <li className="dance-frame dance-animation--dancer5"></li>
-        <li className="dance-frame dance-animation--dancer6"></li>
-        <li className="dance-frame dance-animation--dancer7"></li>
-        <li className="dance-frame dance-animation--dancer8"></li>
-        <li className="dance-frame dance-animation--dancer9"></li>
-        <li className="dance-frame dance-animation--dancer10"></li>
-        <li className="dance-frame dance-animation--dancer11"></li>
-      </ul>
-      <iframe width="0" height="0" src="https://www.1youtuberepeater.com/watch?v=kWvbJsB0OBc&name=Tom+Jones+Its+Not+Unusual+With+Lyrics" frameBorder="0" allowFullScreen></iframe>
-
-      <div className="play-music">
-        <div id="music-animation" className="music-animation">
-          <span className="bar bar1"></span>
-          <span className="bar bar2"></span>
-          <span className="bar bar3"></span>
-          <span className="bar bar4"></span>
-          <span className="bar bar5"></span>
+  function Sas() {
+    return (
+      <div className="seaContainer">
+        <h1>404</h1>
+        <h2>How'd you get lost down here???</h2>
+        <div className="submarine__container">
+          <div className="light" />
+          <div className="submarine__periscope" />
+          <div className="submarine__periscope-glass" />
+          <div className="submarine__sail">
+            <div className="submarine__sail-shadow dark1">
+            </div>
+            <div className="submarine__sail-shadow light1" />
+            <div className="submarine__sail-shadow dark2" />
+          </div>
+          <div className="submarine__body">
+            <div className="submarine__window one">
+            </div>
+            <div className="submarine__window two">
+            </div>
+            <div className="submarine__shadow-dark" />
+            <div className="submarine__shadow-light" />
+            <div className="submarine__shadow-arcLight" />
+          </div>
+          <div className="submarine__propeller">
+            <div className="propeller__perspective">
+              <div className="submarine__propeller-parts darkOne" />
+              <div className="submarine__propeller-parts lightOne" />
+            </div>        
+          </div>
         </div>
-        <div className="music-toggle"><a id="toggle" data-text-swap="Music on">Music off</a></div>
+        <div className="bubbles__container">
+          <span className="bubbles bubble-1" />
+          <span className="bubbles bubble-2" />
+          <span className="bubbles bubble-3" />
+          <span className="bubbles bubble-4" />
+        </div>
+        <div className="ground__container">
+          <div className="ground ground1">
+            <span className="up-1" />
+            <span className="up-2" />
+            <span className="up-3" />
+            <span className="up-4" />
+            <span className="up-5" />
+            <span className="up-6" />
+            <span className="up-7" />
+            <span className="up-8" />
+            <span className="up-9" />
+            <span className="up-10" />
+          </div>
+          <div className="ground ground2">
+            <span className="up-1" />
+            <span className="up-2" />
+            <span className="up-3" />
+            <span className="up-4" />
+            <span className="up-5" />
+            <span className="up-6" />
+            <span className="up-7" />
+            <span className="up-8" />
+            <span className="up-9" />
+            <span className="up-10" />
+            <span className="up-11" />
+            <span className="up-12" />
+            <span className="up-13" />
+            <span className="up-14" />
+            <span className="up-15" />
+            <span className="up-16" />
+            <span className="up-17" />
+            <span className="up-18" />
+            <span className="up-19" />
+            <span className="up-20" />
+          </div>
+        </div>
       </div>
-      <audio id="music" loop="loop" src="https://web.opendrive.com/api/v1/download/file.json/OV84MDUyNTM1NF9aSXB6Sw?inline=1"></audio>
-    </div>
-  )
-}
-export default Testsass
+    );
+  };
+
+export default Sas

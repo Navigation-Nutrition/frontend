@@ -21,9 +21,8 @@ const CustomForm = ({ addTask }) => {
       className="todo"
       onSubmit={handleFormSubmit}
       >
-      <div className="wrapper">
-        <input
-          type="text"
+      <div className="todowrapper">
+        <input type="text"
           id="task"
           className="todoinput"
           value={task}
@@ -35,11 +34,11 @@ const CustomForm = ({ addTask }) => {
         />
         <label
           htmlFor="task"
-          className="label"
+          className="todolabel"
         >Enter Task</label>
       </div>
       <button
-        className="btn"
+        className="todobtn"
         aria-label="Add Task"
         type="submit"
         >

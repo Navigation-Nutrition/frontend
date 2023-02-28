@@ -38,8 +38,8 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
     <li className={styles.task}>
       <div className={styles["task-group"]}>
         <input
-          type="checkbox"
-          className={styles.checkbox}
+          type="todocheckbox"
+          className={styles.todocheckbox}
           checked={isChecked}
           onChange={handleCheckboxChange}
           name={task.name}
@@ -50,14 +50,14 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
           className={styles.label}
         >
           {task.name}
-          <p className={styles.checkmark}>
+          <p className={styles.todocheckmark}>
             <CheckIcon strokeWidth={2} width={24} height={24}/>
           </p>
         </label>
       </div>
       <div className={styles["task-group"]}>
         <button
-          className='btn'
+          className='todobtn'
           aria-label={`Update ${task.name} Task`}
           onClick={() => enterEditMode(task)}
         >

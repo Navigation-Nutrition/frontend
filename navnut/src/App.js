@@ -7,6 +7,8 @@ import ToDo from './Components/todo/todolist';
 import Quiz from "./Components/QuizPage";
 import Meal from "./Components/Meal";
 import Navbar from './Components/Navbar';
+import Sas from "./Components/scss/testscass"
+import Blog from "./Components/Blog"
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <Route path='todo' element ={<ToDo /> }/> 
       <Route path='quiz' element ={<Quiz /> }/> 
       <Route path='meal' element ={<Meal /> }/>
+      <Route path='Blog' element ={<Blog /> }/>
+      <Route path='*' element ={<Sas /> }/>
     </Routes> 
    
     </div>

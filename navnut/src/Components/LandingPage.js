@@ -29,7 +29,7 @@ function LandingPage() {
       <Button  href="http://localhost:3000/signup" className = "bootstapBut" variant="danger"> Get Started</Button>{}
       <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
      </div>
-     <img className="landing img" src={IMG_1161} alt="React Image" />
+     <img className="landingimg" src={IMG_1161} alt="React Image" />
   </div>
   
   <div className = 'd-flex flex-column mb-3'>

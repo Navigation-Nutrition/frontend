@@ -30,14 +30,14 @@ const EditForm = ({ editedTask, updateTask, closeEditMode }) => {
       onClick={(e) => {e.target === e.currentTarget && closeEditMode()}}
       >
       <form
-        className="todo"
+        className="todoinput"
         onSubmit={handleFormSubmit}
         >
-        <div className="wrapper">
+        <div className="todowrapper">
           <input
             type="text"
             id="editTask"
-            className="input"
+            className="todoinput"
             value={updatedTaskName}
             onInput={(e) => setUpdatedTaskName(e.target.value)}
             required
@@ -47,11 +47,11 @@ const EditForm = ({ editedTask, updateTask, closeEditMode }) => {
           />
           <label
             htmlFor="editTask"
-            className="form-label"
+            className="todoform-label"
           >Update Task</label>
         </div>
         <button
-          className="btn"
+          className="todoinputbtn"
           aria-label={`Confirm edited task to now read ${updatedTaskName}`}
           type="submit"
           >

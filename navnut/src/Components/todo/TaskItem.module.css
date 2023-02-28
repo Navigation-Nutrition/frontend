@@ -1,4 +1,4 @@
-/* .task {
+.task {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +23,7 @@
   line-height: 1.4;
 }
 
-.checkbox {
+.todocheckbox {
   flex-shrink: 0;
   appearance: none;
   -webkit-appearance: none;
@@ -40,18 +40,18 @@
     background-color 80ms ease-in-out;
 }
 
-.checkbox:focus {
+.todocheckbox:focus {
   outline: none;
 }
 
-.checkbox:is(:focus-visible, :hover) {
+.todocheckbox:is(:focus-visible, :hover) {
   box-shadow:
     0 0 0 hsl(var(--bg)),
     0 0 0 .05em hsl(var(--accent)),
     0 0 0 .225em hsl(var(--accent) / .3);
 }
 
-.checkmark {
+.todocheckmark {
   content: '';
   position: absolute;
   width: 1em;
@@ -65,16 +65,16 @@
   transition: background-color 80ms ease-in-out;
 }
 
-.checkmark svg {
+.todocheckmark svg {
   width: .75em;
   height: .75em;
 }
 
-.checkbox:checked {
+.todocheckbox:checked {
   background-color: hsl(var(--accent));
 }
 
-.checkbox:checked+label {
+.todocheckbox:checked+label {
   text-decoration: line-through;
 }
 
@@ -105,4 +105,4 @@
   color: hsl(var(--accent1));
   font-size: var(--_size);
   text-align: center;
-} */
+} 
