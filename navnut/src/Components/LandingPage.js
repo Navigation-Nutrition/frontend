@@ -12,16 +12,6 @@ function LandingPage() {
     return (
 
 <div className="Landing">
-<div className="header">
-   <div className="title" > NAVIGATION NUTRITION</div>
-   
-   <div className="nav">
-   <NavLink to="/todo" className={"item"}> Nutrition </NavLink>
-     {/* <Link to="/">Home</Link> */}
-     {/* <div className="item"> Community</div> */}
-     <NavLink to="/todo" className={"item"}> Community </NavLink>
-   </div>
- </div>
   <div className="content">
     <div className="text">
       <h1>Become Nutrious</h1>
@@ -46,11 +36,6 @@ function LandingPage() {
   Sed dolor nist, blandit nec lacus dignissim, sollicitudin elementum erat. Nulla viverra massa vitae diam aliquam ullamcorper.</h5>
     <div className="button">CHECK MORE FEATURES</div>
   </div>  */}
-  
-  
-   <div className="footer">
-  &copy; NAVIGATION NUTRITION all rights reserved
-  </div>
   
       </div>
     );
