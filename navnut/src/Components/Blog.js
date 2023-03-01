@@ -55,7 +55,7 @@ export const Blog = () => {
             <div className='box boxItems' key={item.post_id}>
               <div className='img'>
                 {/* <img src={item.cover} alt='' />  */}
-                <img src={b5} alt='' />
+                <img src={item.img_url} alt='' />
               </div>
               <div className='details'>
                 <Link to={`/details/${item.id}`} className='link'>

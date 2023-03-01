@@ -12,6 +12,7 @@ import Blog from "./Components/Blog"
 import Footer from './Components/Footer';
 import NutrtionFact from './Components/NutrtionFacts';
 import DetailsPages from './Components/DetailsPages';
+import MyForm from './Components/search';
 
 
 
@@ -28,6 +29,7 @@ function App() {
       <Route path='meal' element ={<Meal /> }/>
       <Route path='Blog' element ={<Blog /> }/>
       <Route path='*' element ={<Sas /> }/>
+      {/* <Route path='form' element ={<MyForm /> }/> */}
     </Routes> 
       <Footer/>
     </div>
