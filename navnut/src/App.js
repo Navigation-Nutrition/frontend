@@ -11,6 +11,7 @@ import Sas from "./Components/scss/testscass"
 import Blog from "./Components/Blog"
 import Footer from './Components/Footer';
 import NutrtionFact from './Components/NutrtionFacts';
+import DetailsPages from './Components/DetailsPages';
 
 
 

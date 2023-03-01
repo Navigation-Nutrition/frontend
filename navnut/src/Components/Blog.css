@@ -37,15 +37,6 @@ background: #fff;
     margin-right: 10px;
     font-size: 20px;
   }
-  .blog .tag a {
-    color: blue;
-    opacity: 0.7;
-  }
-  .blog .tag {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-  }
   .blog h3 {
     font-weight: 500;
   }
