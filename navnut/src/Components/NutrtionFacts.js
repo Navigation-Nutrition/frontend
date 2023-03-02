@@ -7,8 +7,8 @@ function NutrtionFact(){
     return(
     <div className="randomfact">
     <div className='fact'>
-      <h3>Nutrtition Fun Fact:</h3>
-      <h1>{randomValue}</h1>
+      <h3>Nutrition Fun Fact:</h3>
+      <h2>{randomValue}</h2>
   </div>
 </div>
 )

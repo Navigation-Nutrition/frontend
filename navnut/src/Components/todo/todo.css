@@ -252,9 +252,10 @@ label {
   color: hsl(var(--bg));
 }
 
-h1 {
-  font-size: calc(var(--_size) * 1.3);
+.todoh1 {
+  font-size: calc(var(--_size) * 2);
   text-align: center;
+  margin-top: 50px;
 }
 
 .container {
@@ -344,11 +345,13 @@ hr {
   border: none;
   border-radius: var(--_radius);
   padding: 0.35em 0.55em;
-  width: 100%;
+  width: 650px;
   background-color: hsl(var(--muted));
   caret-color: hsl(var(--accent));
   box-shadow: 0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent) / 0.8);
   transition: box-shadow var(--_tspeed_fast) var(--_ttype_squish);
+  margin-bottom: 50px;
+  margin-top:50px;
 }
 
 .input:focus {

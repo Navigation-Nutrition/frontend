@@ -10,10 +10,11 @@ import Nav from './Components/Navbar';
 import Sas from "./Components/scss/testscass"
 import Blog from "./Components/Blog"
 import Footer from './Components/Footer';
+import BlogForm from './Components/Editblog';
 import NutrtionFact from './Components/NutrtionFacts';
 import DetailsPages from './Components/DetailsPages';
 import MyForm from './Components/search';
-
+import BlogUpdateForm from './Components/UpdateBlog';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
       <Route path='meal' element ={<Meal /> }/>
       <Route path='Blog' element ={<Blog /> }/>
       <Route path='*' element ={<Sas /> }/>
+      <Route path='edit' element ={<BlogForm/> }/>
+      <Route path='update/:post_id' element ={<BlogUpdateForm/> }/>
       {/* <Route path='form' element ={<MyForm /> }/> */}
     </Routes> 
       <Footer/>

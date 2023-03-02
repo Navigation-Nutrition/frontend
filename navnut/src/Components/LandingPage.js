@@ -23,9 +23,9 @@ function LandingPage() {
   </div>
   
   <div className = 'd-flex flex-column mb-3'>
-    <NavLink to="/quiz" className={'box1'} ><FaArrowAltCircleRight /> PLAY NUTRITION GAME </NavLink>
-    <NavLink to="https://www.heart.org/en/news/tag-nutrition-news" className='box2'><FaArrowAltCircleRight /> NUTRTION NEWS  </NavLink>
-    <NavLink to="/meal"  className={'box3'} ><FaArrowAltCircleRight /> NUTRTION RECIPES  </NavLink>
+    <NavLink to="/quiz"  style={{ color:"#000350", textDecoration: 'none'}} className={'box1'} ><FaArrowAltCircleRight /> PLAY NUTRITION GAME </NavLink>
+    <NavLink to="https://www.heart.org/en/news/tag-nutrition-news"  style={{ color:"#000350", textDecoration: 'none'}} className='box2'><FaArrowAltCircleRight /> NUTRITION NEWS  </NavLink>
+    <NavLink to="/meal"  style={{ color:"#000350", textDecoration: 'none'}} className={'box3'} ><FaArrowAltCircleRight /> NUTRITION RECIPES  </NavLink>
      </div> 
   
   

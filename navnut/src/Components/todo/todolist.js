@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import NutrtionFact from '../NutrtionFacts'
 // custom components
 import CustomForm from './CustomForm'
 import EditForm from './EditForm'
@@ -53,7 +53,7 @@ const [tasks, setTasks] = useLocalStorage('react-todo.tasks', [])
   return (
     <div className="todocontainer">
       <header>
-        <h1>My Nutrtion Todo</h1>
+        <h1 className='todoh1'>My Nutrtion Todo</h1>
       </header>
       {
         isEditing && (
@@ -73,6 +73,7 @@ const [tasks, setTasks] = useLocalStorage('react-todo.tasks', [])
           enterEditMode={enterEditMode}
         />
       )}
+       <NutrtionFact />
     </div>
   )
 }

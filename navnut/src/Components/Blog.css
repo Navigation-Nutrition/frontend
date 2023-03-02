@@ -2,7 +2,10 @@
 .blogcontainer {
     max-width: 95%;
     margin: auto;
+    margin: 0;
+    background-color: #000350;
 }
+
 .boxItems{
 border: 1px solid #e6e6e6;
 border-radius: 12px;
