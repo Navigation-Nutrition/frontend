@@ -12,6 +12,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 export const Blog = (props) => {
   let [feeds, setfeeds] = useState([])
+  // let [Button, setButton] = useState()
   // useEffect(()=>{
   //  async function UserShelters () {
   //  let info = await fetch(`http://backend-deployment-production.up.railway.app/reservations/${usersId}`)
@@ -33,6 +34,7 @@ export const Blog = (props) => {
   //     .catch(console.error);
       
   // }, [])
+  
 
   useEffect(()=>{
   async function GetAllPost() {
@@ -72,7 +74,7 @@ export const Blog = (props) => {
                     <AiFillEdit className='icon' /> 
                     <label htmlFor=''>Edit </label> 
                   </Link>
-                  <AiFillDelete className='icon' /> <label htmlFor=''>Delete</label>
+                  <AiFillDelete onClick={activateLasers} className='icon' /> <label htmlFor=''>Delete</label>
                 </div>
               </div>
             </div> )
