@@ -1,8 +1,11 @@
+.blogpage{
+  background-color: #000350;
+}
 
 .blogcontainer {
     max-width: 95%;
     margin: auto;
-    margin: 0;
+    margin-top: 50px;
     background-color: #000350;
 }
 
@@ -19,7 +22,8 @@ background: #fff;
   }
 
 .blog {
-    margin: 50px 0;
+    /* margin: 50px 0; */
+    background-color: #000350;
   }
   .blog .boxItems {
     transition: 0.5s;
@@ -58,4 +62,44 @@ background: #fff;
     display: block;
     margin-right: 20px;
   }
-  
+  /* body {
+      font-family: 'Rammetto One', cursive;
+    
+      font-size: 25px;
+      margin: 50px;
+    } */
+    .cobriute {
+      display: flex;
+      margin: auto 0;
+      margin-left: 80%;
+    }
+    .cobriute a {
+      display: flex; 
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+    .cobriute a i {
+      display: flex;
+      background-color: #ffffff;
+      color: #00a2e8;
+      border: 1px solid #00a2e8;
+      padding: 6.8px 8px;
+      font-size: 1.1em;
+      vertical-align: middle;
+      top: -2px;
+    }
+    .cobriute a span {
+      background-color: #00a2e8;
+      color: #ffffff;
+      border: 1px solid #00a2e8;
+      padding: 6.8px 8px;
+    }
+    .space{
+      margin: 50px;
+    }
+    .resume-section {
+      background-image: linear-gradient(62deg, #041d37 0%, #e0c3fc06 100%);
+      color: #ffffff;
+    }

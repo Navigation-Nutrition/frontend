@@ -6,6 +6,7 @@ import IMG_1161 from '../IMGS/IMG_1161.JPG'
 import { FaArrowAltCircleRight } from 'react-icons/fa';
 import '../CSS/landingPage.css'
 import { Link, NavLink } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 
 function LandingPage() {

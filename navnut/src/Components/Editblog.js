@@ -60,6 +60,7 @@ import { useNavigate } from "react-router-dom";
                 console.log(data)
                 navigate("/blog");
               })
+              
           }
 
       return (
@@ -68,13 +69,13 @@ import { useNavigate } from "react-router-dom";
           <h2 className="mb-4"> New Post</h2>
           <form onSubmit={Submit} className="contact-form d-flex flex-column align-items-center" >
             <div className="form-group w-75">
-              <input type="url" className="form-control" placeholder="Url" onChange={handleUrl} name="name" required />
+              <textarea type="url" className="form-control" placeholder="Url" onChange={handleUrl} name="name" required />
             </div>
             <div className="form-group w-75">
-              <input type="title" className="form-control" placeholder="Title" onChange={handleTitle} name="name" required />
+              <textarea type="title" className="form-control" placeholder="Title" onChange={handleTitle} name="name" required />
             </div>
             <div className="form-group w-75">
-              <input type="text" className="form-control" placeholder="Date" name="Date" onChange={handleDate} required />
+              <textarea type="text" className="form-control" placeholder="Date" name="Date" onChange={handleDate} required />
             </div>
             <div className="form-group w-75">
               <textarea className="form-control" type="text" placeholder="Message" onChange={handleMessage} rows={7} name="name" required defaultValue={""} />

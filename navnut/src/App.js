@@ -15,6 +15,7 @@ import NutrtionFact from './Components/NutrtionFacts';
 import DetailsPages from './Components/DetailsPages';
 import MyForm from './Components/search';
 import BlogUpdateForm from './Components/UpdateBlog';
+import Readblog from './Components/read';
 
 
 function App() {
@@ -30,8 +31,9 @@ function App() {
       <Route path='meal' element ={<Meal /> }/>
       <Route path='Blog' element ={<Blog /> }/>
       <Route path='*' element ={<Sas /> }/>
-      <Route path='edit' element ={<BlogForm/> }/>
-      <Route path='update/:post_id' element ={<BlogUpdateForm/> }/>
+      <Route path='newpost' element ={<BlogForm/> }/>
+      <Route path='blog/update/:post_id' element ={<BlogUpdateForm/> }/>
+      <Route path='blog/read' element ={<Readblog/> }/>
       {/* <Route path='form' element ={<MyForm /> }/> */}
     </Routes> 
       <Footer/>

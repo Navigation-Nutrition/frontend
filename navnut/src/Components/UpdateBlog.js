@@ -102,6 +102,7 @@ function BlogUpdateForm(props) {
         fetch("http://localhost:8000/post", requestOptions)
             .then(response => response.text())
             .then(result => console.log(result))
+            navigate("/blog");
     }
 
     return (

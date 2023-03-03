@@ -53,7 +53,7 @@ const [tasks, setTasks] = useLocalStorage('react-todo.tasks', [])
   return (
     <div className="todocontainer">
       <header>
-        <h1 className='todoh1'>My Nutrtion Todo</h1>
+        <h1 className='todoh1'>My Nutrition Todo</h1>
       </header>
       {
         isEditing && (
