@@ -20,13 +20,13 @@ function Navbar(){
 function Nav(){
   return (
   <div className="header">
-  <div className="title" > NAVIGATION NUTRITION</div>
+  <NavLink to="/" style={{ color:"#000350", textDecoration: 'none'}} className="title" > NAVIGATION NUTRITION </NavLink>
   
   <div className="nav">
-  <NavLink to="/todo" className={"item"}> Nutrition </NavLink>
+  <NavLink to="/todo" style={{color:"#000350", textDecoration: 'none'}} className={"item"}> Nutrition </NavLink>
     {/* <Link to="/">Home</Link> */}
     {/* <div className="item"> Community</div> */}
-    <NavLink to="/todo" className={"item"}> Community </NavLink>
+  <NavLink to="/blog" style={{color:"#000350", textDecoration: 'none'}} className={"item"}> Community </NavLink>
   </div>
 </div>
   )

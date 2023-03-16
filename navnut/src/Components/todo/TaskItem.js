@@ -33,13 +33,12 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
     }
     // console.log(counter)
   }
-
-  return (
+return (
     <li className={styles.task}>
       <div className={styles["task-group"]}>
         <input
-          type="todocheckbox"
-          className={styles.todocheckbox}
+          type="checkbox"
+          className={styles.checkbox}
           checked={isChecked}
           onChange={handleCheckboxChange}
           name={task.name}
@@ -50,8 +49,8 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
           className={styles.label}
         >
           {task.name}
-          <p className={styles.todocheckmark}>
-            <CheckIcon strokeWidth={2} width={24} height={24}/>
+          <p className={styles.checkmark}>
+            {/* <CheckIcon strokeWidth={2} width={24} height={24}/> */}
           </p>
         </label>
       </div>
@@ -65,7 +64,7 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
         </button>
 
         <button
-          className={`btn ${styles.delete}`}
+          className={`todobtn ${styles.delete}`}
           aria-label={`Delete ${task.name} Task`}
           onClick={() => deleteTask(task.id)}
         >
@@ -75,5 +74,46 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
       </div>
     </li>
   )
+  // return (
+  //   <li className={styles.task}>
+  //     <div className={styles["task-group"]}>
+  //       <input
+  //         type="todocheckbox"
+  //         className={styles.todocheckbox}
+  //         checked={isChecked}
+  //         onChange={handleCheckboxChange}
+  //         name={task.name}
+  //         id={task.id}
+  //       />
+  //       <label
+  //         htmlFor={task.id}
+  //         className={styles.label}
+  //       >
+  //         {task.name}
+  //         <p className={styles.todocheckmark}>
+  //           <CheckIcon strokeWidth={2} width={24} height={24}/>
+  //         </p>
+  //       </label>
+  //     </div>
+  //     <div className={styles["task-group"]}>
+  //       <button
+  //         className='todobtn'
+  //         aria-label={`Update ${task.name} Task`}
+  //         onClick={() => enterEditMode(task)}
+  //       >
+  //         <PencilSquareIcon width={24} height={24} />
+  //       </button>
+
+  //       <button
+  //         className={`btn ${styles.delete}`}
+  //         aria-label={`Delete ${task.name} Task`}
+  //         onClick={() => deleteTask(task.id)}
+  //       >
+  //         <TrashIcon width={24} height={24} />
+  //       </button>
+
+  //     </div>
+  //   </li>
+  // )
 }
 export default TaskItem
